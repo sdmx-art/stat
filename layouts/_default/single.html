@@ -1,4 +1,10 @@
 {{ define "main" }}
+  <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet"/>
+  <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+  <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
+  <script defer language="javascript" type="text/javascript"  src="{{ "/js/wdr.js" | urlize | relURL }}"></script>
+  <p>This line is from <code>layouts/_default/single.html</code>. Before Content.</p>
 	{{ .Content }}
-  <p>This line is from <code>layouts/_default/single.html</code>.</p>
+  <div id="pivot-container"></div>
+  <p>This line is from <code>layouts/_default/single.html</code>. After Content.</p>
 {{ end }}
